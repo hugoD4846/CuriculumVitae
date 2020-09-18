@@ -1,0 +1,88 @@
+/*///////competences///////*/
+.competences li>*{
+    position: absolute;
+}
+.competences img{
+    width: 44px;
+    height: 44px;
+    transition: transform 0.6s;
+    z-index: 3;
+    padding: 3px;
+    border-radius: 1000px;
+    background-color: #2980b9;
+}
+
+.competences li:nth-child(2n) img{
+    transform: translateX(150px);
+}
+
+.competences span{
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 12px 0;
+    overflow-x: hidden;
+}
+
+.competences .comp-content {
+    width: 190px;
+    background-color: #bdc3c7;
+    vertical-align: 20px;
+    z-index: 1;
+}
+.competences .comp-title{
+    background-color: #ecf0f1;
+    float: right;
+    transform-origin: right;
+    transition: all 0.6s;
+    vertical-align: 20px;
+    z-index: 2;
+}
+.competences ul{
+    list-style: none;
+}
+.competences li{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 100px;
+    margin: 2px;
+}
+.competences a{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    color: inherit;
+    margin: -12px 0;
+    transition: all 0.5s;
+}
+/*hidding animation*/
+.competences li:nth-child(2n):hover img{
+    transform: translateX(10px)rotateZ(-360deg);
+}
+.competences li:hover img{
+    transform: translateX(140px)rotateZ(360deg);
+}
+.competences li:hover .comp-title{
+    width: 40px;
+    border-radius: 1000px;
+    transform-origin: right;
+}
+.competences li:nth-child(2n+1):hover .comp-title{
+    transform: translateX(148px);
+    width: 40px;
+    border-radius: 1000px;
+    transform-origin: right;
+}
+.competences a:hover{
+    background-color: #1d2935b0;
+    color: #bdc3c7;
+    font-weight: bold;
+}
+.competences a:hover:visited{
+    background-color: #27916ee8;
+}
