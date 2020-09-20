@@ -6,16 +6,18 @@
     <title>DUTOIT Hugo</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/competences.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="">Etat civil</a></li>
+            <li><a href="#EtatCivil">Etat civil</a></li>
             <li>
-                <a href="">Formation</a>
+                <a href="#Formation">Formation</a>
                 <ul>
-                    <li><a href="#">plop</a></li>
-                    <li><a href="#">plop</a></li>
+                    <li><a href="#Formation">DUT info</a></li>
+                    <li><a href="#Formation">BAC S</a></li>
                 </ul>
             </li>
             <li><a href="">Compétences</a></li>
@@ -31,11 +33,14 @@
         </ul>
     </nav>
     <div id="opaque-nav"></div>
-    <header>
+    <header id="EtatCivil">
         <div class="layout">
             <div id="header-content">
                 <h1>DUTOIT hugo</h1>
                 <span>Etudiant en DUT Informatique</span>
+                <p>
+                    19ans|PERMIS B
+                </p>
             </div>
             <img src="rsc/header/downArrow.png" alt="fleche" id="fleche">
         </div>
@@ -44,7 +49,51 @@
         </div>
     </header>
     <main>
-
+        <section id="Formation">
+            <h2>FORMATIONS</h2>
+            <article>
+                <div class="articleContent">
+                    <h3>Université | DUT Informatique</h3>
+                    <ul>
+                        <li><a href="https://www.iut-a.univ-lille.fr/dpt-info/" target="_blank">Cité Scientifique-Villeneuves d'ascq</a></li>
+                        <li>Periode : sept 2019 - Actuellement</li>
+                        <li>
+                            Languages:
+                            <ul>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>html/CSS/JavaScript</li>
+                                <li>SQL</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="BGarticle" style="background-color: #AC2773;"></div>
+            </article>
+            <article>
+                <div class="BGarticle" style="background-color: #17A1AB;"></div>
+                <div class="articleContent">
+                    <h3>Lycée | Baccalaureat S</h3>
+                    <ul>
+                        <li><a href="https://gustave-eiffel-armentieres.enthdf.fr/" target="_blank">Lycée Gustave Effeil-Armentières</a></li>
+                        <li>Periode : sept 2016 - juin2019</li>
+                        <li>Mention: Bien (15.78/20)</li>
+                        <li>Specialisation:
+                            <ul>
+                                <li>Science de l'ingénieur</li>
+                                <li>Informatique et Science du Numérique</li>
+                            </ul>
+                        </li>
+                        <li>Option:
+                            <ul>
+                                <li>Section Europeen Anglais(Physique)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            
+        </section>
         <div class="competences">
             <ul>
                 <li>
@@ -73,7 +122,7 @@
                     <span class="comp-content"><a href="mailto:hugo.dutoit.etu@univ-lille.fr">hugo.dutoit.etu</a></span>
                 </li>
             </ul>
-        </div>s
+        </div>
     </main>
     <script src="script/main.js"></script>
 </body>

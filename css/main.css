@@ -1,11 +1,32 @@
+/*fonts*/
+@font-face {
+    font-family: Anton;
+    src: url(rsc/fonts/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: Zilla;
+    src: url(rsc/fonts/ZillaSlabHighlight-Regular.ttf);
+}
+@font-face {
+    font-family: Open-Sans;
+    src: url(rsc/fonts/Open-Sans/OpenSans-Bold.ttf);
+}
+
+
 body{
     font-family: monospace;
     color: black;
     margin: 0;
 }
+html{
+    
+    scroll-behavior: smooth;
+}
 header{
     position: relative;
     z-index: 20;
+    height: 99vh;
+    overflow: hidden;
 }
 
 header #headerBG{
@@ -13,7 +34,7 @@ header #headerBG{
     z-index: 20;
 }
 header .layout{
-    height: 715px;
+    height: 99vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 21;
@@ -125,4 +146,82 @@ nav>ul>li ul{
     padding: 0;
     list-style-type: none;
     margin: 25px 5px;
+}
+
+/*#Formation*/
+#Formation{
+    margin: 0 100px 100px 100px;
+
+    padding-top: 100px ;
+    height: 80vh;
+    min-height: 500px;
+    border-bottom: black 2px solid;
+    overflow: hidden;
+}
+#Formation>h2{
+    margin: 10px -8px 60px -8px;
+    font-family:  Anton;
+    font-size: 200px;
+}
+#Formation >article{
+    width: 45.99%;
+    height: 100vh;
+    border: black 2px solid;
+    position: relative;
+    padding: 30px;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 1s cubic-bezier(.07,.96,.75,.99);
+    ;
+}
+#Formation>article:hover{
+    transform: translateY(-220px);
+}
+#Formation>article:first{
+    
+    margin-top: -10px;
+}
+article .BGarticle{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    margin: -100px;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.5s;
+}
+#Formation>article:hover .BGarticle{
+    opacity: 1;
+} 
+#Formation>article .articleContent{
+    z-index: 11;
+    position: absolute;
+}
+#Formation>article:hover .articleContent ul{
+    opacity: 1;
+}
+#Formation .articleContent ul{
+    font-size: 20px;
+    padding: 10px 50px;
+    transition: opacity 0.5s;
+    opacity: 0;
+
+}
+#Formation .articleContent>ul>li{
+    margin: 5vh 0px;
+} 
+#Formation >article h3{
+    font-family: Open-Sans;
+    font-weight: lighter;
+    font-size: 40px;
+    margin: 0;
+}
+#Formation a{
+    font-weight: bold;
+    color: black;
+}
+#Formation article:hover a{
+    color: white;
 }
